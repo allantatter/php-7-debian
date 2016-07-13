@@ -30,7 +30,8 @@ git pull
 ./buildconf --force
 
 CONFIGURE_STRING="--prefix=/usr/local/php7 \
-                  --with-config-file-scan-dir=/usr/local/php7/etc/conf.d \
+                  --with-config-file-path=/etc/php7/cli \
+                  --with-config-file-scan-dir=/etc/php7/cli/conf.d \
                   --without-pear \
                   --enable-bcmath \
                   --with-bz2 \
